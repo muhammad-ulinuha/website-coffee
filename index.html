@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">
+
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <header class="header">
+            <div class="hero">
+                <h2 class="heading">A Cup Of Coffee</h2>
+                <p class="sub-heading">Coffee & Coffee Beans</p>
+            </div>
+            <div class="features features-1">
+                <h4 class="price">IDR 250rb</h4>
+                <p class="item">Cappuccino</p>
+            </div>
+            <div class="features features-2">
+                <h4 class="price">IDR 150rb</h4>
+                <p class="item">Premium Coffee</p>
+            </div>
+        </header>
+
+        <!-- navigation -->
+        <nav class="menu">
+            <div class="menu-toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="brand">
+                <h1>Mu-Nuha</h1>
+            </div>
+            <ul class="menu-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#gallery">Galeri</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section id="service" class="services">
+            <h2>Services</h2>
+            <div class="service">
+                <div class="icon"><i class='bx bxs-coffee bx-lg bx-tada bx-burst-hover'></i></div>
+                <h3>Original Coffee</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt expedita atque cumque odio doloremque tenetur.</p>
+            </div>
+
+            <div class="service">
+                <div class="icon"><i class='bx bxs-coffee-togo bx-lg bx-tada bx-burst-hover'></i></div>
+                <h3>A Cup Of Coffee</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt expedita atque cumque odio doloremque tenetur.</p>
+            </div>
+
+            <div class="service">
+                <div class="icon"><i class='bx bxs-droplet-half bx-lg bx-tada bx-burst-hover'></i></div>
+                <h3>Coffee Beans</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt expedita atque cumque odio doloremque tenetur.</p>
+            </div>
+
+            <div class="service">
+                <div class="icon"><i class='bx bxs-barcode bx-lg bx-tada bx-burst-hover'></i></div>
+                <h3>Mix Coffee</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt expedita atque cumque odio doloremque tenetur.</p>
+            </div>
+
+            <div class="service">
+                <div class="icon"><i class='bx bxs-leaf bx-lg bx-tada bx-burst-hover'></i></div>
+                <h3>Popular Coffee</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt expedita atque cumque odio doloremque tenetur.</p>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <h2>Gallery</h2>
+            <img src="img/coffee-1.jpg" alt="">
+            <img src="img/coffee-2.jpg" alt="">
+            <img src="img/coffee-3.jpg" alt="">
+            <img src="img/coffee-4.jpg" alt="">
+            <img src="img/coffee-5.jpg" alt="">
+            <img src="img/coffee-6.jpg" alt="">
+            <img src="img/coffee-7.jpg" alt="">
+            <img src="img/coffee-8.jpg" alt="">
+            <img src="img/coffee-9.jpg" alt="">
+            <img src="img/coffee-10.jpg" alt="">
+        </section>
+
+        <section id="about" class="abouts">
+            <h2>About</h2>
+            <div class="about">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam consequatur dolor nulla neque sint facilis quisquam qui! Iusto vel, deleniti, quaerat quos corporis eaque deserunt aut dicta necessitatibus eveniet optio?</p>
+            </div>
+        </section>
+
+        <!-- contact -->
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <div class="form">
+                <h4>Email : muhammadulinuha3@gmail.com </h4>
+
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="footer">
+            <h5>&copy;2022 Mu-Nuha</h5>
+        </footer>
+
+    </div>
+    
+    
+
+    <!-- javascript -->
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle input');
+        const nav = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', function () {
+            nav.classList.toggle('slide');
+        });
+    </script>
+
+</body>
+</html>
